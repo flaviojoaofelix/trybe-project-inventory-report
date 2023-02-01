@@ -1,6 +1,5 @@
 # # from inventory_report.reports.report import Report
-from inventory_report.reports.handle_report_data import HandleReportData
-from inventory_report.reports.print_report import PrintReport
+from inventory_report.reports.utils_report import HandleReportData, PrintReport
 
 
 class SimpleReport:
