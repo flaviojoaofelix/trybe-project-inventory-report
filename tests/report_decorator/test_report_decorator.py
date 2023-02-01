@@ -9,10 +9,10 @@ from tests.product.test_product import product_mock
 class MockReport(MockProductReport):
     def __init__(self, mocked_product):
         super().__init__(mocked_product)
-        self.color_blue = "\033[36m"
-        self.color_green = "\033[32m"
-        self.color_red = "\033[31m"
-        self.color_end = "\033[0m"
+        self.cb = "\033[36m"
+        self.cg = "\033[32m"
+        self.cr = "\033[31m"
+        self.ce = "\033[0m"
 
     def get_mocked_list(self):
         mocked_list = [
@@ -31,9 +31,12 @@ class MockReport(MockProductReport):
 
     def __repr__(self):
         return (
-            f"{self.color_green}Data de fabricação mais antiga:{self.color_end} {self.color_blue}{self.manufacturing_date}{self.color_end}\n"
-            f"{self.color_green}Data de validade mais próxima:{self.color_end} {self.color_blue}{self.expiration_date}{self.color_end}\n"
-            f"{self.color_green}Empresa com mais produtos:{self.color_end} {self.color_red}{self.company_name}{self.color_end}"
+            f"{self.cg}Data de fabricação mais antiga:{self.ce} "
+            f"{self.cb}{self.manufacturing_date}{self.ce}\n"
+            f"{self.cg}Data de validade mais próxima:{self.ce} "
+            f"{self.cb}{self.expiration_date}{self.ce}\n"
+            f"{self.cg}Empresa com mais produtos:{self.ce} "
+            f"{self.cr}{self.company_name}{self.ce}"
         )
 
 
