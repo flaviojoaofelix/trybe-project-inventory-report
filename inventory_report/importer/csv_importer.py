@@ -12,4 +12,4 @@ class CsvImporter(Importer):
 
             return data_list
         else:
-            raise ValueError("O arquivo não é .csv")
+            raise ValueError("Arquivo inválido")

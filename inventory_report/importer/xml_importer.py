@@ -16,4 +16,4 @@ class XmlImporter(Importer):
             return data_list["dataset"]["record"]
 
         else:
-            raise ValueError("O arquivo não é .xml")
+            raise ValueError("Arquivo inválido")

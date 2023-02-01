@@ -19,7 +19,7 @@ class Inventory:
             data_list = XmlImporter.import_data(file_path)
 
         else:
-            raise ValueError("O formato do arquivo é desconhecido")
+            raise ValueError("Arquivo inválido")
 
         return cls.get_report(data_list, report_type)
 
