@@ -492,7 +492,7 @@ inventory_report <caminho_do_arquivo_input> <tipo_de_relatório>
  </details>
  
  <details>
-  <summary>🧱 Estrutura do Projeto</summary><br />
+  <summary>Estrutura do Projeto</summary><br />
   Este repositório já contém um template com a estrutura de diretórios e arquivos, tanto de código quanto de teste criados. Veja abaixo:
 
   ```
