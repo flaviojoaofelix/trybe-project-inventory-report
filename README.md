@@ -1,13 +1,13 @@
+:construction: EM CONSTRUÇÃO :construction:
 # Trybe
 
 ## Curso de Desenvolvimento Web Full-Stack
 
 - *Módulo de Ciências da Computação*
 
-
 ## Projeto: Inventory Report
 
-:construction: EM CONSTRUÇÃO :construction:
+Neste projeto foi desenvolvido um **gerador de relatório**, utilizando de Programação Orientada a Objetos (OOP) e Python, que recebe como entrada um arquivo (CSV, JSON ou XML) com dados do estoque e tem como saída um relatório acerca desses dados.
 
 ## Tecnologias Utilizadas no Projeto
 
