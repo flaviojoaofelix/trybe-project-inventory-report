@@ -488,4 +488,76 @@ inventory_report <caminho_do_arquivo_input> <tipo_de_relatório>
 
   - 11.7 - Será validado se houverem argumentos faltantes será retornando um erro
   
+    </details>
  </details>
+ 
+ <details>
+  <summary>🧱 Estrutura do Projeto</summary><br />
+  Este repositório já contém um template com a estrutura de diretórios e arquivos, tanto de código quanto de teste criados. Veja abaixo:
+
+  ```
+  Legenda:
+  🔸Arquivos que não podem ser alterados
+  🔹Arquivos a serem alterados para realizar os requisitos.
+  .
+  ├── inventory_report
+  │   ├── data
+  │   │   ├── 🔸inventory.csv
+  │   │   ├── 🔸inventory.json
+  │   │   └── 🔸inventory.xml
+  │   ├── importer
+  │   │   ├── 🔹csv_importer.py
+  │   │   ├── 🔹importer.py
+  │   │   ├── 🔹json_importer.py
+  │   │   └── 🔹xml_importer.py
+  │   ├── inventory
+  │   │   ├── 🔹inventory_iterator.py
+  │   │   ├── 🔹inventory_refactor.py
+  │   │   └── 🔹inventory.py
+  │   │   └── 🔸product.py
+  │   ├── reports
+  │   │   ├── 🔸colored_report.py
+  │   │   ├── 🔹complete_report.py
+  │   │   └── 🔹simple_report.py
+  │   └── 🔹main.py
+  └── tests
+  │   ├── factories
+  │   │   ├── 🔸__init__.py
+  │   │   └── 🔸product_factory.py
+  │   ├── product
+  │   │   ├── 🔸__init__.py
+  │   │   ├── 🔸conftest.py
+  │   │   ├── 🔸mocks.py
+  │   │   └── 🔹test_product.py
+  │   ├── product_report
+  │   │   ├── 🔸__init__.py
+  │   │   ├── 🔸conftest.py
+  │   │   ├── 🔸mocks.py
+  │   │   └── 🔹test_product_report.py
+  │   ├── report_decorator
+  │   │   ├── 🔸__init__.py
+  │   │   ├── 🔸conftest.py
+  │   │   ├── 🔸mocks.py
+  │   │   └── 🔹test_report_decorator.py
+  │   ├── 🔸__init__.py
+  │   ├── 🔸marker.py
+  │   ├── 🔸test_complete_report.py
+  │   ├── 🔸test_importer.py
+  │   ├── 🔸test_inventory_refactor.py
+  │   ├── 🔸test_inventory.py
+  │   ├── 🔸test_main.py
+  │   └── 🔸test_simple_report.py
+  ├── 🔹dev-requirements.txt
+  ├── 🔸docker-compose.yml
+  ├── 🔸Dockerfile
+  ├── 🔸pyproject.toml
+  ├── 🔸README.md
+  ├── 🔸requirements.txt
+  ├── 🔸setup.cfg
+  ├── 🔸setup.py
+  └── 🔸trybe.yml
+  ```
+
+  Apesar do projeto já possuir uma **estrutura base**, você perceberá que possui arquivos vazios, ou seja, neles você quem deve implementar as classes. Novos arquivos e funções podem ser criados conforme a necessidade da sua implementação, porém não remova arquivos já existentes.
+
+</details>
