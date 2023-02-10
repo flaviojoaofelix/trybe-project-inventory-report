@@ -31,11 +31,9 @@ class HandleReportData:
 
     def companies_stock_list(self):
         companies = self.companies_stock
-        companies_stock = ""
-
-        for company in companies:
-            companies_stock += f"- {company}: {companies[company]}\n"
-
+        companies_stock = "".join(
+            f"- {company}: {companies[company]}\n" for company in companies
+        )
         return companies_stock
 
 

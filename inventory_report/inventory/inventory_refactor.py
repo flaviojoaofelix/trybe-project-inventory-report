@@ -7,7 +7,7 @@ from inventory_report.reports.simple_report import SimpleReport
 class InventoryRefactor:
     def __init__(self, importer: Importer):
         self.importer = importer
-        self.data = list()
+        self.data = []
 
     def __iter__(self):
         return InventoryIterator(self.data)
