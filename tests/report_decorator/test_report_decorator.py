@@ -15,7 +15,7 @@ class MockReport(MockProductReport):
         self.ce = "\033[0m"
 
     def get_mocked_list(self):
-        mocked_list = [
+        return [
             {
                 "id": self.product_id,
                 "nome_do_produto": self.product_name,
@@ -26,8 +26,6 @@ class MockReport(MockProductReport):
                 "instrucoes_de_armazenamento": self.storage_instructions,
             }
         ]
-
-        return mocked_list
 
     def __repr__(self):
         return (

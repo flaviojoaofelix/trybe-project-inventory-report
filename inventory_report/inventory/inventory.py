@@ -23,12 +23,12 @@ class Inventory:
 
         return cls.get_report(data_list, report_type)
 
-    def get_report(data: list, report_type: str):
+    def get_report(self, report_type: str):
         if report_type == "completo":
-            report = CompleteReport.generate(data)
+            report = CompleteReport.generate(self)
 
         elif report_type == "simples":
-            report = SimpleReport.generate(data)
+            report = SimpleReport.generate(self)
 
         else:
             raise ValueError("Tipo de relatório desconhecido")
